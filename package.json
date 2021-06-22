@@ -1,0 +1,10 @@
+{
+  "name": "vue-digging",
+  "version": "1.0.0",
+  "description": "vue digging",
+  "main": "index.js",
+  "repository": "https://github.com/StephanieTM/vue-digging.git",
+  "author": "Stephanie.Gao <tm1997@163.com>",
+  "license": "ISC",
+  "private": true
+}
