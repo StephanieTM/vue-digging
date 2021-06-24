@@ -5,6 +5,7 @@ import App from './App.vue';
 const routes = [
   {
     path: '/',
+    component: () => import('./components/Home'),
   },
   {
     path: '/hello-world',
