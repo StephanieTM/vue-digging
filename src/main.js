@@ -1,6 +1,9 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
+import ElementPlus from 'element-plus'
+import CustomRouterLink from './components/RouterLink';
 import App from './App.vue';
+import './element-variables.scss';
 
 const routes = [
   {
@@ -38,6 +41,10 @@ const router = createRouter({
   routes,
 });
 
-createApp(App)
-  .use(router)
+const app = createApp(App);
+
+app.component('app-link', CustomRouterLink);
+
+app.use(router)
+  .use(ElementPlus)
   .mount('#app');
