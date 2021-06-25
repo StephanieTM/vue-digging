@@ -4,7 +4,7 @@
   </div>
 
   <div class="router-link-container">
-    <router-link class="router-link" to="/tutorial/1">声明式渲染</router-link>
+    <app-link class="router-link" to="/tutorial/1">声明式渲染</app-link>
   </div>
 
   <router-view></router-view>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Tutorial'
+  name: 'tutorial'
 }
 </script>
 
