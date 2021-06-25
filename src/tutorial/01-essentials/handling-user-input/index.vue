@@ -12,7 +12,6 @@
 
 <script>
 export default {
-  name: 'handling-user-input',
   data() {
     return {
       message: 'Hello Vue.js',

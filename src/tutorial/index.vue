@@ -21,7 +21,6 @@
 import { routes } from '@/routes';
 
 export default {
-  name: 'tutorial',
   data() {
     return {
       routes: (routes.find(item => item.path === '/tutorial').children || []).filter(item => !item.hideInMenu),

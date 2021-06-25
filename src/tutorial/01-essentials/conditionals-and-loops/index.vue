@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  name: 'conditionals-and-loops',
   data() {
     return {
       seen: true,

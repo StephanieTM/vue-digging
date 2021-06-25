@@ -23,7 +23,6 @@
 import { routes } from '@/routes';
 
 export default {
-  name: 'tutorial-01',
   data() {
     let tutorial1Routes = [];
     try {
