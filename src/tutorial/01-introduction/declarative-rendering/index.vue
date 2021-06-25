@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'counter',
+  name: 'declarative-rendering',
   data() {
     return {
       counter: 0,
