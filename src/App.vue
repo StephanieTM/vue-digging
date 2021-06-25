@@ -2,9 +2,9 @@
   <Header />
 
   <div class="router-link-container">
-    <router-link class="router-link" to="/">Home</router-link>
-    <router-link class="router-link" to="/hello-world">Hello World</router-link>
-    <router-link class="router-link" to="/tutorial">Tutorial</router-link>
+    <app-link class="router-link" to="/">Home</app-link>
+    <app-link class="router-link" to="/hello-world">Hello World</app-link>
+    <app-link class="router-link" to="/tutorial">Tutorial</app-link>
   </div>
 
   <router-view></router-view>
@@ -23,7 +23,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

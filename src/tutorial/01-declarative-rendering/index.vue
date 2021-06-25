@@ -4,7 +4,7 @@
   </div>
 
   <div class="router-link-container">
-    <router-link class="router-link" to="/tutorial/1/counter">计数器</router-link>
+    <app-link class="router-link" to="/tutorial/1/counter">计数器</app-link>
   </div>
 
   <div class="content-container">
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Tutorial01',
+  name: 'tutorial-01',
 }
 </script>
 
