@@ -7,18 +7,23 @@
 
   <h2>Setter & Getter</h2>
   <div class="division"><SetterAndGetter /></div>
+
+  <h2>侦听器</h2>
+  <div class="division"><Watch /></div>
 </template>
 
 <script>
 import Computed from './computed.vue';
 import ComputedVSMethods from './computed-vs-methods.vue';
 import SetterAndGetter from './setter-and-getter.vue';
+import Watch from './watch.vue';
 
 export default {
   components: {
     Computed,
     ComputedVSMethods,
     SetterAndGetter,
+    Watch,
   },
 }
 </script>
