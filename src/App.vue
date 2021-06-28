@@ -2,22 +2,32 @@
   <Header />
 
   <div class="router-link-container">
-    <app-link class="router-link" to="/">Home</app-link>
-    <app-link class="router-link" to="/hello-world">Hello World</app-link>
-    <app-link class="router-link" to="/tutorial">Tutorial</app-link>
+    <app-link
+      v-for="router in routes"
+      class="router-link"
+      :key="router.path"
+      :to="router.path"
+    >
+      {{router.title}}
+    </app-link>
   </div>
 
   <router-view></router-view>
 </template>
 
 <script>
+import { routes } from '@/routes';
 import Header from './components/Header';
 
 export default {
-  name: 'app',
   components: {
     Header,
-  }
+  },
+  data() {
+    return {
+      routes: (routes || []).filter(item => !item.hideInMenu),
+    };
+  },
 }
 </script>
 

@@ -5,9 +5,7 @@
 </template>
 
 <script>
-export default {
-  name: 'Placeholder',
-}
+export default {};
 </script>
 
 <style scoped>

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    教程（官方文档）
+    声明式渲染
   </div>
 
   <div class="router-link-container">
@@ -14,7 +14,9 @@
     </app-link>
   </div>
 
-  <router-view></router-view>
+  <div class="content-container">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -22,8 +24,14 @@ import { routes } from '@/routes';
 
 export default {
   data() {
+    let tutorial1Routes = [];
+    try {
+      tutorial1Routes = routes.find(item => item.path === '/tutorial').children.find(item => item.path === '/tutorial/1').children.filter(item => !item.hideInMenu);
+    } catch {
+      tutorial1Routes = [];
+    }
     return {
-      routes: (routes.find(item => item.path === '/tutorial').children || []).filter(item => !item.hideInMenu),
+      routes: tutorial1Routes || [],
     };
   },
 }
