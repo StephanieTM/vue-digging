@@ -44,6 +44,11 @@ export const routes = [
             path: '/tutorial/1/computed-properties-and-watchers',
             component: () => import('./tutorial/01-essentials/computed-properties-and-watchers'),
           },
+          {
+            title: 'Class 与 Style 绑定',
+            path: '/tutorial/1/class-and-style-bindings',
+            component: () => import('./tutorial/01-essentials/class-and-style-bindings'),
+          },
         ],
       },
     ],
