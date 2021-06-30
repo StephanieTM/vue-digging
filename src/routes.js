@@ -39,6 +39,11 @@ export const routes = [
             path: '/tutorial/1/class-and-style-bindings',
             component: () => import('./tutorial/01-essentials/class-and-style-bindings'),
           },
+          {
+            title: '条件渲染',
+            path: '/tutorial/1/conditional-rendering',
+            component: () => import('./tutorial/01-essentials/conditional-rendering'),
+          },
         ],
       },
     ],
