@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h2>事件监听</h2>
+    <h3>事件监听</h3>
     <p>{{ message }}</p>
     <el-button @click="reverseMessage">反转 Message</el-button>
 
-    <h2>双向绑定</h2>
+    <h3>双向绑定</h3>
     <p>{{ message }}</p>
     <el-input v-model="message"></el-input>
   </div>

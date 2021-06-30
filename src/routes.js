@@ -25,19 +25,9 @@ export const routes = [
             component: () => import('./components/Placeholder'),
           },
           {
-            title: '声明式渲染',
-            path: '/tutorial/1/declarative-rendering',
-            component: () => import('./tutorial/01-essentials/declarative-rendering'),
-          },
-          {
-            title: '处理用户输入',
-            path: '/tutorial/1/handling-user-input',
-            component: () => import('./tutorial/01-essentials/handling-user-input'),
-          },
-          {
-            title: '条件与循环',
-            path: '/tutorial/1/conditionals-and-loops',
-            component: () => import('./tutorial/01-essentials/conditionals-and-loops'),
+            title: '介绍',
+            path: '/tutorial/1/introduction',
+            component: () => import('./tutorial/01-essentials/introduction'),
           },
           {
             title: '计算属性和侦听器',
@@ -48,6 +38,11 @@ export const routes = [
             title: 'Class 与 Style 绑定',
             path: '/tutorial/1/class-and-style-bindings',
             component: () => import('./tutorial/01-essentials/class-and-style-bindings'),
+          },
+          {
+            title: '条件渲染',
+            path: '/tutorial/1/conditional-rendering',
+            component: () => import('./tutorial/01-essentials/conditional-rendering'),
           },
         ],
       },

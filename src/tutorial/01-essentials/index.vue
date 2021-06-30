@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    声明式渲染
+    基础
   </div>
 
   <div class="router-link-container">
