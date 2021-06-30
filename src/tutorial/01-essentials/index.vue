@@ -26,7 +26,7 @@ export default {
   data() {
     let tutorial1Routes = [];
     try {
-      tutorial1Routes = routes.find(item => item.path === '/tutorial').children.find(item => item.path === '/tutorial/1').children.filter(item => !item.hideInMenu);
+      tutorial1Routes = routes.find(item => item.path === '/tutorial').children.find(item => item.path === '/tutorial/essentials').children.filter(item => !item.hideInMenu);
     } catch {
       tutorial1Routes = [];
     }
