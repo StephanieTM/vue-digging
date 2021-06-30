@@ -1,11 +1,11 @@
 <template>
-  <h2>v-if</h2>
+  <h3>v-if</h3>
   <div>
     <el-button @click="toggleSeen">{{seen ? '隐藏' : '展示'}}</el-button>
     <div class="text" v-if="seen">现在你看到我了</div>
   </div>
 
-  <h2>v-for</h2>
+  <h3>v-for</h3>
   <ol>
     <li v-for="todo in todos" :key="todo.id">
       {{ todo.text }}
