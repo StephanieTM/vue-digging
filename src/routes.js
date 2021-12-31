@@ -49,6 +49,11 @@ export const routes = [
             path: '/tutorial/essentials/list-rendering',
             component: () => import('./tutorial/01-essentials/list-rendering'),
           },
+          {
+            title: '组件基础',
+            path: '/tutorial/essentials/component-basics',
+            component: () => import('./tutorial/01-essentials/component-basics'),
+          },
         ],
       },
     ],
